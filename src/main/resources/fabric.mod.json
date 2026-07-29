@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "tpswitcher",
+	"version": "${version}",
+	"name": "Texture Pack Switcher",
+	"description": "A Fabric mod that lets you switch between different texture pack combinations with a single click.",
+	"authors": [
+		"justhalit"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/tpswitcher/lang/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.tpswitcher.TextureSwitcherClient"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

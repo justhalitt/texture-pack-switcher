@@ -3,14 +3,6 @@ package com.tpswitcher;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a single texture pack profile.
- * name: the name the user gave this profile
- * icon: an item/block id used as the icon shown next to the profile in the list
- *       (e.g. "minecraft:diamond_sword", "minecraft:grass_block")
- * packs: the resource pack ids belonging to this profile (the id used by
- *        ResourcePackManager, e.g. "file/MyPack.zip")
- */
 public class Profile {
 
 	private String name;

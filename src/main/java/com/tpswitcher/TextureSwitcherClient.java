@@ -14,7 +14,6 @@ public class TextureSwitcherClient implements ClientModInitializer {
 	private static final KeyBinding.Category CATEGORY =
 			KeyBinding.Category.create(Identifier.of("tpswitcher", "general"));
 
-	// The key that opens the mod's main UI (the profile list). Default: "I".
 	private static KeyBinding openMenuKey;
 
 	@Override
@@ -34,6 +33,8 @@ public class TextureSwitcherClient implements ClientModInitializer {
 					client.setScreen(new ProfileListScreen(null));
 				}
 			}
+
+			ProfileManager.trackActivePacks(client);
 		});
 	}
 }
